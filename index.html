@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>Fixed headers - fullPage.js</title>
+	<meta name="author" content="Alvaro Trigo Lopez" />
+	<meta name="description" content="fullPage fixed header and footer." />
+	<meta name="keywords"  content="fullpage,jquery,demo,screen,fixed, header,footer, absolute, positioned,css" />
+	<meta name="Resource-type" content="Document" />
+
+
+	<link rel="stylesheet" type="text/css" href="jquery.fullPage.css" />
+	<link rel="stylesheet" type="text/css" href="examples/examples.css" />
+	<style>
+
+	/* Style for our header texts
+	* --------------------------------------- */
+	h1{
+		font-size: 5em;
+		font-family: arial,helvetica;
+		color: #fff;
+		margin:0;
+		padding:0;
+	}
+	.intro p{
+		color: #fff;
+	}
+
+	/* Centered texts in each section
+	* --------------------------------------- */
+	.section{
+		text-align:center;
+	}
+
+	/* Fixed header and footer.
+	* --------------------------------------- */
+	#header, #footer{
+		position:fixed;
+		display:block;
+		width: 100%;
+		background: #e5e4e0;
+		z-index:9;
+		text-align:center;
+		color: #f2f2f2;
+		padding: 20px 0 0 0;
+	}
+
+	#header{
+		top:0px;
+	}
+	#footer{
+		bottom:0px;
+	}
+
+
+	/* Bottom menu
+	* --------------------------------------- */
+	#infoMenu {
+		bottom: 80px;
+	}
+	#infoMenu li a {
+		color: #fff;
+		z-index: 999;
+	}
+
+	</style>
+
+	<!--[if IE]>
+		<script type="text/javascript">
+			 var console = { log: function() {} };
+		</script>
+		<![endif]-->
+
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+		<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.9.1/jquery-ui.min.js"></script>
+
+		<script type="text/javascript" src="vendors/jquery.slimscroll.min.js"></script>
+
+		<script type="text/javascript" src="jquery.fullPage.js"></script>
+		<script type="text/javascript" src="examples/examples.js"></script>
+
+		<script type="text/javascript">
+		$(document).ready(function() {
+			$('#fullpage').fullpage({
+				anchors: ['firstPage', 'secondPage', '3rdPage'],
+				sectionsColor: ['#C63D0F', '#e5e4e0', '#7E8F7C'],
+				css3: true
+			});
+		});
+		</script>
+
+	</head>
+	<body>
+
+
+		<div id="header">
+			<h1>DR. RONALDO MAIA</h1>
+			<h2>Urologia</h2>
+
+			<ul id="menu">
+				<li data-menuanchor="firstPage"><a href="#firstPage">Dr. Ronaldo Maia</a></li>
+				<li data-menuanchor="secondPage"><a href="#secondPage">Especialidades</a></li>
+				<li data-menuanchor="3rdPage"><a href="#3rdPage">Consultório</a></li>
+			</ul>
+
+		</div>
+
+
+
+		<div id="fullpage">
+			<div class="section" id="section0">
+				<div class="intro">
+					<div class="box-medico">
+
+						<div class="avatar"><img src="examples/imgs/avatar.png"></div>
+
+						<div class="info"><p>
+							O Dr. Ronaldo Maia é médico urologista, graduado pela UEL – Universidade Estadual de</p>
+
+							<p>Londrina e pós-graduado pela
+								Escola Paulista de Medicina – Universidade Federal de São Paulo. </p>
+
+								<p>Com mais de 20 anos atuando na área de urologia, possui grande experiência no tratamento de cálculos renais, problemas urinários e transplantes.
+								</p></div>
+
+								<br clear="both">
+							</div>
+						</div>
+					</div>
+
+					<div class="section" id="section1">
+
+						<div class="intro">
+							<h1>Especialidades</h1>
+
+							<div class="container">
+
+								<div class="col1">
+									<div class="especial">
+										<h2>Endourologia</h2>
+										<p></p>
+									</div>
+								</div>
+								<div class="col1">
+									<div class="especial">
+										<h2>Uro-Oncologia </h2>
+										<p></p>
+									</div></div>
+									<div class="col1"><div class="especial">
+										<h2>Andrologia</h2>
+										<p></p>
+									</div></div>
+
+								</div>
+
+							</div>
+
+
+
+
+						</div>
+						<div class="section" id="section2">
+							<div class="intro">
+								<div class="consultorio">
+									<p>
+										O consultório do Dr. Ronaldo Maia está localizado em região de fácil acesso, na <strong>Rua Frei Caneca, 558 conjunto 2501</strong>, em frente ao Shopping Frei Caneca.</p>
+
+										<p>O edifício conta com uma excelente estrutura, com segurança, estacionamento com manobrista e  acessibilidade para deficientes.</p>
+									
+									
+									<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1959.913110685938!2d-46.653062875193605!3d-23.554002406921526!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce583519949945%3A0xf3bb8a92d83fc603!2sR.+Frei+Caneca%2C+558+-+Consola%C3%A7%C3%A3o%2C+S%C3%A3o+Paulo+-+SP%2C+01307-001!5e0!3m2!1spt-BR!2sbr!4v1443429669218" width="600" height="200" frameborder="0" style="border:0" allowfullscreen></iframe>
+
+									Entre em contato com o Dr. Ronaldo Maia: <a href="mailto:contato@gmail.com.br">contato@gmail.com.br</a>
+								</div>
+							</div>
+						</div>
+					</div>
+
+
+				</body>
+				</html>
